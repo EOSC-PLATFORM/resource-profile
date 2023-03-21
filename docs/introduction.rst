@@ -7,6 +7,19 @@ process useful to deliver value in the context of the EOSC. EOSC Service
 has specialization like Data Sources which includes Research Products and
 any other asset.
 
+Data sources are EOSC Services and a subclass of EOSC Services whose specific
+purpose is to offer deposition, preservation, curation, discovery, access,
+and usage statistics functionalities to collections of EOSC Research Products
+from a thematic or cross-discipline perspective.
+
+EOSC Data Sources include Repositories, Scientific Databases, Aggregators,
+Journal sites, Publisher sites, and Research Information Systems (CRIS).
+Data sources store, preserve, and support discovery and access to metadata,
+files, and data relative to publications, research data, research software,
+and other research products; Data sources can be “hybrid” in terms of content,
+as they may offer access to a variety of research products, and in terms of
+intended users, and jurisdiction (i.e. target audience).
+
 
 Versions
 ^^^^^^^^
