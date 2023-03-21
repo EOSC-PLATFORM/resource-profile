@@ -1,12 +1,12 @@
 Introduction
 ------------
 
-An EOSC Provider is an EOSC System User responsible for the provisioning of one or more
-Resources to the EOSC. EOSC Providers are organisations, a part of an organisation or a
-federation that manages and delivers Resources to End-Users. EOSC Providers can be:
-Resource Providers, Service Providers, Data (Source) Providers, Service Developers,
-Research Infrastructures, Distributed Research Infrastructures, Resource Aggregators,
-Thematic Clouds, Regional Clouds, etc.
+An EOSC Service is an asset made available by means of the EOSC system and
+according to the EOSC Rules of Participation to EOSC End-Users to perform a
+process useful to deliver value in the context of the EOSC. EOSC Service
+has specialization like Data Sources which includes Research Products and
+any other asset.
+
 
 Versions
 ^^^^^^^^
