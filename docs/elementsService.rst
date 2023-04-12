@@ -44,10 +44,10 @@ Specialization
      - A high-level description in fairly non-technical terms of a) what the Resource does, functionality it provides and Resources it enables to access, b) the benefit to a user/customer delivered by a Resource; benefits are usually related to alleviating pains (e.g., eliminate undesired outcomes, obstacles or risks) or producing gains (e.g. increased performance, social gains, positive emotions or cost saving), c) list of customers, communities, users, etc. using the Resource.
      - Y
    * - fundingBody
-     - Name of the funding body that supported the development and/or operation of the Resource.
+     - Name of the funding body that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_BODY>`.
      - N
    * - fundingPrograms
-     - Name of the funding program that supported the development and/or operation of the Resource.
+     - Name of the funding program that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_PROGRAM>`.
      - N
    * - geographicalAvailabilities
      - Locations where the Resource is offered.
@@ -95,7 +95,7 @@ Specialization
      - Webpage through which an order for the Resource can be placed.
      - N
    * - orderType
-     - Information on the order type (requires an ordering procedure, or no ordering and if fully open or requires authentication). :doc:`Vocabulary <_vocabularies/ORDER_TYPE>`.
+     - Information on the order type (requires an ordering procedure, or no ordering and if fully open or requires authentication).
      - Y
    * - paymentModel
      - Webpage with the supported payment models and restrictions that apply to each of them.
@@ -173,31 +173,32 @@ Specialization
      - Webpage with information about the Resource usually hosted and maintained by the Provider.
      - Y
 
+.. _datasource:
 
-DataSource
-~~~~~~~~~~
+Data Source
+===========
 
-.. list-table:: EOSC Provider Profile Elements of "datasource"
+.. list-table:: EOSC Provider Profile Elements of "data source"
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory
-   * - datasourceClassification
+   * - dataSourceClassification
      - The specific type of the data source based on the vocabulary defined for this property
      - Y
    * - jurisdiction
-     - The property defines the jurisdiction of the users of the data source, based on the vocabulary for this property
+     - The property defines the jurisdiction of the users of the data source, based on the vocabulary for this property :doc:`Vocabulary <_vocabularies/DS_JURISDICTION>`.
      - Y
    * - persistentIdentitySystems
-     - The persistent identifier systems that are used by the Data Source to identify the EntityType it supports
+     - The persistent identifier systems that are used by the Data Source to identify the EntityType it supports :doc:`Vocabulary <_vocabularies/DS_PERSISTENT_IDENTITY_SCHEME>`.
      - N
    * - preservationPolicyURL
      - This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content
      - N
    * - researchEntityTypes
-     - The types of OpenAIRE entities managed by the data source, based on the vocabulary for this property
+     - The types of OpenAIRE entities managed by the data source, based on the vocabulary for this property :doc:`Vocabulary <_vocabularies/DS_RESEARCH_ENTITY_TYPE>`.
      - Y
    * - researchProductAccessPolicies
      - Research product access policy
