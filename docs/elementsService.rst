@@ -178,6 +178,8 @@ Specialization
 Data Source
 ===========
 
+* main profile is :ref:`service`.
+
 .. list-table:: EOSC Provider Profile Elements of "data source"
    :widths: 25 50 10
    :header-rows: 1
