@@ -49,7 +49,7 @@ Data Source
 
    * - Element name
      - Description
-     - Mandatory<xsl:for-each select="//xs:complexType[@name='dataSource']//*"><xsl:choose><xsl:when test="xs:documentation">
+     - Mandatory<xsl:for-each select="//xs:complexType[@name='datasource']//*"><xsl:choose><xsl:when test="xs:documentation">
    * - <xsl:value-of select='../@name'/>
      - <xsl:value-of select='normalize-space(xs:documentation)'/>
         <xsl:call-template name="checkVocabulary">
