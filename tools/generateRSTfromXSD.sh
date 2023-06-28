@@ -6,5 +6,5 @@
 #
 # 2022 , Bielefeld University Library: Andreas Czerniak, Sabeel Shah
 
-xmlstarlet tr xslt/selectDocumentationsForComplexTypeService.xsl ../schemas/schema1.xsd > ../docs/elementsService.rst 2>> logs/exceptionTRprovider.log
+xmlstarlet tr xslt/selectDocumentationsForComplexType.xsl ../schemas/schema1.xsd > ../docs/elements.rst 2>> exceptionTR.log
 

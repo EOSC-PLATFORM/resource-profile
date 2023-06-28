@@ -4,6 +4,8 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xsl:output method="xml" omit-xml-declaration="yes"/>
+    <xsl:include href="vocabulary.xsl"/>
+
     <xsl:template match="/">
 .. _service:
 
