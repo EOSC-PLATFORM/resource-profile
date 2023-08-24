@@ -16,8 +16,11 @@ Service
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Mandatory
+        
+   * - id
+     - A persistent identifier, a unique reference to the Resource in the context of the EOSC Portal.
+     - N
    * - name
      - Resource Full Name as assigned by the Provider.
      - Y
@@ -30,6 +33,9 @@ Service
    * - resourceProviders
      - The name(s) (or abbreviation(s)) of Provider(s) that manage or deliver the Resource in federated scenarios.
      - N
+   * - 
+     - 
+     - Y
    * - 
      - 
      - Y
@@ -70,9 +76,15 @@ Service
      - Description
      - Mandatory  
 	    
-   * - 
-     - 
+   * - scientificDomains
+     - The branch of science, scientific discipline that is related to the Resource. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
      - Y
+   * - categories
+     - A named group of Resources that offer access to the same type of Resources. :doc:`Vocabulary <_vocabularies/CATEGORY>`.
+     - Y
+   * - category
+     - 
+     - N
    * - 
      - 
      - Y
@@ -81,6 +93,9 @@ Service
      - Y
    * - accessType
      - 
+     - N
+   * - accessModes
+     - Eligibility/criteria for granting access to users (excellence-based, free-conditionally, free etc.). :doc:`Vocabulary <_vocabularies/ACCESS_MODE>`.
      - N
    * - tags
      - Keywords associated to the Resource to simplify search by relevant keywords.
@@ -127,17 +142,53 @@ Service
      - Description
      - Mandatory  
 	    
-   * - mainContact
-     - Service's Main Contact/Resource Owner info.
+   * - 
+     - 
      - Y
-   * - publicContacts
-     - List of the Service's Public Contacts info.
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
      - Y
    * - helpdeskEmail
      - The email to ask more information from the Provider about this Resource.
      - Y
    * - securityContactEmail
      - The email to contact the Provider for critical security issues about this Resource.
+     - Y
+   * - mainContact
+     - Service's Main Contact/Resource Owner info.
+     - Y
+   * - publicContacts
+     - List of the Service's Public Contacts info.
      - Y
 7. Maturity
 ########
@@ -211,12 +262,12 @@ Service
    * - fundingBody
      - Name of the funding body that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_BODY>`.
      - N
-   * - fundingProgram
-     - 
+   * - fundingPrograms
+     - Name of the funding program that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_PROGRAM>`.
      - N
-   * - 
-     - 
-     - Y
+   * - grantProjectNames
+     - Name of the project that supported the development and/or operation of the Resource.
+     - N
 10. Management
 ########
 
