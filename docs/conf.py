@@ -26,11 +26,11 @@ if not on_rtd:
 # -- Project information -----------------------------------------------------
 
 project = 'EOSC - Service PROFILE'
-copyright = '2022, EOSC'
+copyright = '2022-23, EOSC'
 author = 'EOSC profile strategy team'
 
 # The full version, including alpha/beta/rc tags
-release = '4.0'
+release = '4.1-rc'
 
 
 # -- General configuration ---------------------------------------------------
