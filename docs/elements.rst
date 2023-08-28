@@ -36,9 +36,6 @@ Service
    * - 
      - 
      - Y
-   * - 
-     - 
-     - Y
 2. Marketing
 ########
 
@@ -59,9 +56,9 @@ Service
    * - logo
      - Link to the logo/visual identity of the Resource. The logo will be visible at the Portal. If there is no specific logo for the Resource the logo of the Provider may be used.
      - Y
-   * - 
-     - 
-     - Y
+   * - multimedia
+     - Link to video, slideshow, photos, screenshots with details of the Provider.
+     - N
    * - useCases
      - Link to use cases supported by this Resource.
      - N
