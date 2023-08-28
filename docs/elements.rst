@@ -33,8 +33,11 @@ Service
    * - resourceProviders
      - The name(s) (or abbreviation(s)) of Provider(s) that manage or deliver the Resource in federated scenarios.
      - N
-   * - 
-     - 
+   * - webpage
+     - Webpage with information about the Resource usually hosted and maintained by the Provider.
+     - Y
+   * - webpage
+     - Webpage with information about the Resource usually hosted and maintained by the Provider.
      - Y
 2. Marketing
 ########

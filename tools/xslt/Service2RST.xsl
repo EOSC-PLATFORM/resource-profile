@@ -46,7 +46,7 @@ Service
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'abbreviation'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'resourceOrganisation'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'resourceProviders'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'Service'" /><xsl:with-param name="keyName" select="'webpage'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'webpage'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block2">
