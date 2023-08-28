@@ -36,9 +36,6 @@ Service
    * - webpage
      - Webpage with information about the Resource usually hosted and maintained by the Provider.
      - Y
-   * - webpage
-     - Webpage with information about the Resource usually hosted and maintained by the Provider.
-     - Y
 2. Marketing
 ########
 
