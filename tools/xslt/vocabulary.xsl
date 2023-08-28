@@ -19,8 +19,7 @@
             <xsl:value-of disable-output-escaping="yes"
                           select="string('&lt;')"/>
             _vocabularies/PROVIDER_AREA_OF_ACTIVITY
-            <xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>
-            `.
+            <xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.
         </xsl:if>
         <xsl:if test="$nameToCheck='categories'">:doc:`Vocabulary
             <xsl:value-of disable-output-escaping="yes"
