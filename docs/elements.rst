@@ -135,54 +135,21 @@ Service
    * - Element name
      - Description
      - Mandatory  
-	    
+        
    * - 
      - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - helpdeskEmail
-     - The email to ask more information from the Provider about this Resource.
-     - Y
-   * - securityContactEmail
-     - The email to contact the Provider for critical security issues about this Resource.
      - Y
    * - mainContact
      - Service's Main Contact/Resource Owner info.
      - Y
    * - publicContacts
      - List of the Service's Public Contacts info.
+     - Y
+   * - helpdeskEmail
+     - The email to ask more information from the Provider about this Resource.
+     - Y
+   * - securityContactEmail
+     - The email to contact the Provider for critical security issues about this Resource.
      - Y
 7. Maturity
 ########
