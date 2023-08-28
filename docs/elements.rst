@@ -73,14 +73,8 @@ Service
      - Description
      - Mandatory  
 	    
-   * - 
-     - 
-     - Y
    * - scientificDomains
      - The branch of science, scientific discipline that is related to the Resource. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
-     - Y
-   * - 
-     - 
      - Y
    * - categories
      - A named group of Resources that offer access to the same type of Resources. :doc:`Vocabulary <_vocabularies/CATEGORY>`.
@@ -88,9 +82,6 @@ Service
    * - category
      - 
      - N
-   * - 
-     - 
-     - Y
    * - targetUsers
      - Type of users/customers that commissions a Provider to deliver a Resource. :doc:`Vocabulary <_vocabularies/TARGET_USER>`.
      - Y
@@ -114,12 +105,12 @@ Service
      - Description
      - Mandatory  
 	    
-   * - geographicalAvailability
-     - 
-     - N
-   * - languageAvailability
-     - 
-     - N
+   * - geographicalAvailabilities
+     - Locations where the Resource is offered.
+     - Y
+   * - languageAvailabilities
+     - Languages of the (user interface of the) Resource.
+     - Y
 5. Location
 ########
 
@@ -131,9 +122,9 @@ Service
      - Description
      - Mandatory  
 	    
-   * - 
-     - 
-     - Y
+   * - resourceGeographicLocations
+     - List of geographic locations where data, samples, etc. are stored and processed.
+     - N
 6. Contact
 ########
 
