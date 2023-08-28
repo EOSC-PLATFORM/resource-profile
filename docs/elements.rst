@@ -73,8 +73,14 @@ Service
      - Description
      - Mandatory  
 	    
+   * - 
+     - 
+     - Y
    * - scientificDomains
      - The branch of science, scientific discipline that is related to the Resource. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
+     - Y
+   * - 
+     - 
      - Y
    * - categories
      - A named group of Resources that offer access to the same type of Resources. :doc:`Vocabulary <_vocabularies/CATEGORY>`.
