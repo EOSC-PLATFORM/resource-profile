@@ -74,35 +74,22 @@ Service
      - Mandatory  
 	    
    * - scientificDomains
-     - The branch of science, scientific discipline that is related to the Resource.Vocabularies: :doc:`Domain<_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain<_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
-        
+     - The branch of science, scientific discipline that is related to the Resource. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
      - Y
    * - categories
-     - A named group of Resources that offer access to the same type of Resources.:doc:`Vocabulary
-            <
-            _vocabularies/CATEGORY>`.
-        
+     - A named group of Resources that offer access to the same type of Resources. :doc:`Vocabulary <_vocabularies/CATEGORY>`.
      - Y
    * - category
      - 
      - N
    * - targetUsers
-     - Type of users/customers that commissions a Provider to deliver a Resource.:doc:`Vocabulary
-            <
-            _vocabularies/TARGET_USER>`.
-        
+     - Type of users/customers that commissions a Provider to deliver a Resource. :doc:`Vocabulary <_vocabularies/TARGET_USER>`.
      - Y
    * - accessTypes
-     - The way a user can access the service/resource (Remote, Physical, Virtual, etc.).:doc:`Vocabulary
-            <
-            _vocabularies/ACCESS_TYPE>`.
-        
+     - The way a user can access the service/resource (Remote, Physical, Virtual, etc.). :doc:`Vocabulary <_vocabularies/ACCESS_TYPE>`.
      - N
    * - accessModes
-     - Eligibility/criteria for granting access to users (excellence-based, free-conditionally, free etc.).:doc:`Vocabulary
-            <
-            _vocabularies/ACCESS_MODE>`.
-        
+     - Eligibility/criteria for granting access to users (excellence-based, free-conditionally, free etc.). :doc:`Vocabulary <_vocabularies/ACCESS_MODE>`.
      - N
    * - tags
      - Keywords associated to the Resource to simplify search by relevant keywords.
@@ -179,10 +166,7 @@ Service
      - 
      - Y
    * - lifeCycleStatus
-     - Phase of the Resource life-cycle.:doc:`Vocabulary
-            <
-            _vocabularies/PROVIDER_LIFE_CYCLE_STATUS>`.
-        
+     - Phase of the Resource life-cycle. :doc:`Vocabulary <_vocabularies/PROVIDER_LIFE_CYCLE_STATUS>`.
      - N
    * - certifications
      - List of certifications obtained for the Resource (including the certification body).
@@ -237,16 +221,10 @@ Service
      - Mandatory  
 	    
    * - fundingBody
-     - Name of the funding body that supported the development and/or operation of the Resource.:doc:`Vocabulary
-            <
-            _vocabularies/FUNDING_BODY>`.
-        
+     - Name of the funding body that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_BODY>`.
      - N
    * - fundingPrograms
-     - Name of the funding program that supported the development and/or operation of the Resource.:doc:`Vocabulary
-            <
-            _vocabularies/FUNDING_PROGRAM>`.
-        
+     - Name of the funding program that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_PROGRAM>`.
      - N
    * - grantProjectNames
      - Name of the project that supported the development and/or operation of the Resource.
