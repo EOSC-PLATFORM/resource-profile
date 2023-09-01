@@ -312,12 +312,18 @@ DataSource
      - Description
      - Mandatory  
 	    
-   * - paymentModel
-     - Webpage with the supported payment models and restrictions that apply to each of them.
-     - N
-   * - pricing
-     - Webpage with the information on the price scheme for this Resource in case the customer is charged for.
-     - N
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     -  :doc:`Vocabulary <_vocabularies/DS_PERSISTENT_IDENTITY_SCHEME>`.
+     - Y
 14. Data Source Content
 ########
 
