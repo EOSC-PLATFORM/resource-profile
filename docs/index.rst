@@ -11,7 +11,7 @@ Welcome to EOSC - Service PROFILE documentation
    :maxdepth: 1
 
    introduction
-   elementsService
+   elementsOfService
 
 Indices and tables
 ==================

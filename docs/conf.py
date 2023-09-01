@@ -25,12 +25,12 @@ if not on_rtd:
 
 # -- Project information -----------------------------------------------------
 
-project = 'EOSC - Service PROFILE'
-copyright = '2022, EOSC'
-author = 'EOSC profile strategy team'
+project = 'EOSC - Provider PROFILE'
+copyright = '2022-2023, EOSC'
+author = 'EOSC metadata schema profile team'
 
 # The full version, including alpha/beta/rc tags
-release = '4.0'
+release = '4.1-rc'
 
 
 # -- General configuration ---------------------------------------------------
@@ -70,14 +70,24 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = [
+    'jquery.dataTables.min.css'
+]
+
+html_js_files = [
+    'jquery.dataTables.min.js',
+    'main.js',
+]
+
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'EOSCserviceProfile'
+htmlhelp_basename = 'EOSCproviderProfile'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -96,7 +106,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'EOSCserviceProfile.tex', u'EOSC service profile',
+  ('index', 'EOSCproviderProfile.tex', u'EOSC Provider profile',
    u'European Open Science Cloud', 'manual'),
 ]
 
@@ -106,8 +116,8 @@ latex_documents = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'EOSCserviceProfiles', u'EOSC Service Profile',
-   u'EOSC', 'EOSCserviceProfiles', 'One line description of project.',
+  ('index', 'EOSCproviderProfile', u'EOSC Provider Profile',
+   u'EOSC', 'EOSCproviderProfile', 'Description on Provider profile for the European Open Science Cloud.',
    'Miscellaneous'),
 ]
 
