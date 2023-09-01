@@ -347,9 +347,6 @@ DataSource
    * - thematic
      - Boolean value specifying if the data source is dedicated to a given discipline or is instead discipline agnostic
      - Y
-   * - thematic
-     - Boolean value specifying if the data source is dedicated to a given discipline or is instead discipline agnostic
-     - Y
 15. Research Product Policies
 ########
 

@@ -298,7 +298,6 @@ DataSource
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'datasourceClassification'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchEntityTypes'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'thematic'" /></xsl:call-template>
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'thematic'" /></xsl:call-template>
 
     </xsl:template>
 	
