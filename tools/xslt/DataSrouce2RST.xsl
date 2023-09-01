@@ -275,10 +275,10 @@ DataSource
    * - Element name
      - Description
      - Mandatory  
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'submissionPolicyURL'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'preservationPolicyURL'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'versionControl'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'persistentIdentitySystems'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'submissionPolicyURL'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'preservationPolicyURL'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'versionControl'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'persistentIdentitySystems'" /></xsl:call-template>
 
     </xsl:template>
 	
@@ -294,9 +294,12 @@ DataSource
    * - Element name
      - Description
      - Mandatory  
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
-               
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'jurisdiction'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'datasourceClassification'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchEntityTypes'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'thematic'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'thematic'" /></xsl:call-template>
+
     </xsl:template>
 	
 	<xsl:template name="block15">
@@ -310,10 +313,10 @@ DataSource
 
    * - Element name
      - Description
-     - Mandatory  
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
-               
+     - Mandatory
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductLicensings'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductAccessPolicies'" /></xsl:call-template>
+
     </xsl:template>
 	
 	<xsl:template name="block16">
@@ -328,9 +331,9 @@ DataSource
    * - Element name
      - Description
      - Mandatory  
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
-               
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductMetadataLicensing'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductMetadataAccessPolicies'" /></xsl:call-template>
+
     </xsl:template>
 	
 	
