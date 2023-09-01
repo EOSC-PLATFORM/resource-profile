@@ -30,7 +30,7 @@ DataSource
 		<xsl:call-template name="block13"><xsl:with-param name="blockName" select="'Data Source Policies'" /></xsl:call-template>
 		<xsl:call-template name="block14"><xsl:with-param name="blockName" select="'Data Source Content'" /></xsl:call-template>
 		<xsl:call-template name="block15"><xsl:with-param name="blockName" select="'Research Product Policies'" /></xsl:call-template>
-		<xsl:call-template name="block16"><xsl:with-param name="blockName" select="'Research Product Metadata /></xsl:call-template>
+		<xsl:call-template name="block16"><xsl:with-param name="blockName" select="'Research Product Metadata'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block1">
@@ -38,7 +38,7 @@ DataSource
 1. Basic
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC DataSource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -58,7 +58,7 @@ DataSource
 2. Marketing
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -69,7 +69,7 @@ DataSource
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'tagline'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'multimedia'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'useCases'" /></xsl:call-template>        
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'useCases'" /></xsl:call-template>
     </xsl:template>
 
 <xsl:template name="block3">
@@ -77,7 +77,7 @@ DataSource
 3. Classification
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -98,7 +98,7 @@ DataSource
 4. Availability
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -114,7 +114,7 @@ DataSource
 5. Location
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -129,7 +129,7 @@ DataSource
 6. Contact
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -150,7 +150,7 @@ DataSource
 7. Maturity
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -173,7 +173,7 @@ DataSource
 8. Dependencies
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -192,7 +192,7 @@ DataSource
 9. Attribution
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -210,7 +210,7 @@ DataSource
 10. Management
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -234,7 +234,7 @@ DataSource
 11. Order
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -251,7 +251,7 @@ DataSource
 12. Financial
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -263,12 +263,12 @@ DataSource
                
     </xsl:template>	
 	
-	<xsl:template name="block12">
+	<xsl:template name="block13">
         <xsl:param name="blockName" />
-13. Financial
+13. Data Source Policies
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -280,12 +280,12 @@ DataSource
                
     </xsl:template>
 	
-	<xsl:template name="block12">
+	<xsl:template name="block14">
         <xsl:param name="blockName" />
-14. Financial
+14. Data Source Content
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -297,12 +297,12 @@ DataSource
                
     </xsl:template>
 	
-	<xsl:template name="block12">
+	<xsl:template name="block15">
         <xsl:param name="blockName" />
-15. Financial
+15. Research Product Policies
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -314,12 +314,12 @@ DataSource
                
     </xsl:template>
 	
-	<xsl:template name="block12">
+	<xsl:template name="block16">
         <xsl:param name="blockName" />
-16. Financial
+16. Research Product Metadata
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -347,13 +347,13 @@ DataSource
     </xsl:template>
 
     <xsl:template name="section">
-.. list-table:: EOSC Service Profile Elements of "service"
+.. list-table:: EOSC Profile Elements of "datasource"
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory<xsl:for-each select="//xs:complexType[@name='service']//*"><xsl:choose><xsl:when test="xs:documentation">
+     - Mandatory<xsl:for-each select="//xs:complexType[@name='datasource']//*"><xsl:choose><xsl:when test="xs:documentation">
    * - <xsl:value-of select='../@name'/>
      - <xsl:value-of select='normalize-space(xs:documentation)'/>
         <xsl:call-template name="checkVocabulary">
