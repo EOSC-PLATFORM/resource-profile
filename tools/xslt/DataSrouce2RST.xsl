@@ -275,9 +275,11 @@ DataSource
    * - Element name
      - Description
      - Mandatory  
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
-		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
-               
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'submissionPolicyURL'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'preservationPolicyURL'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'versionControl'" /></xsl:call-template>
+		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'persistentIdentitySystems'" /></xsl:call-template>
+
     </xsl:template>
 	
 	<xsl:template name="block14">
