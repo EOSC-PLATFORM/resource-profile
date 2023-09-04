@@ -9,6 +9,7 @@
     <xsl:if test="$nameToCheck='accessTypes'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/ACCESS_TYPE<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='areasOfActivity'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_AREA_OF_ACTIVITY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='categories'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/CATEGORY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
+    <xsl:if test="$nameToCheck='country'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/COUNTRY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='esfriDomains'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_ESFRI_DOMAIN<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='esfriType'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_ESFRI_TYPE<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='fundingBody'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/FUNDING_BODY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
@@ -20,6 +21,7 @@
     <xsl:if test="$nameToCheck='location'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/COUNTRY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='merilScientificDomains'"> Vocabularies: :doc:`Domain <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_MERIL_SCIENTIFIC_DOMAIN<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>` / :doc:`Subdomain <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_MERIL_SCIENTIFIC_SUBDOMAIN<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='networks'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/PROVIDER_NETWORK<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
+    <xsl:if test="$nameToCheck='participatingCountries'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/COUNTRY<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='persistentIdentitySystems'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/DS_PERSISTENT_IDENTITY_SCHEME<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='researchEntityTypes'"> :doc:`Vocabulary <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/DS_RESEARCH_ENTITY_TYPE<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
     <xsl:if test="$nameToCheck='scientificDomains'"> Vocabularies: :doc:`Domain <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/SCIENTIFIC_DOMAIN<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>` / :doc:`Subdomain <xsl:value-of disable-output-escaping="yes" select="string('&lt;')"/>_vocabularies/SCIENTIFIC_SUBDOMAIN<xsl:value-of disable-output-escaping="yes" select="string('&gt;')"/>`.</xsl:if>
@@ -30,3 +32,4 @@
 </xsl:template>
 
         </xsl:stylesheet>
+
