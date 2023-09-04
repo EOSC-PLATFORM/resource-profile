@@ -25,7 +25,7 @@ if not on_rtd:
 
 # -- Project information -----------------------------------------------------
 
-project = 'EOSC - Provider PROFILE'
+project = 'EOSC - Service PROFILE'
 copyright = '2022-2023, EOSC'
 author = 'EOSC metadata schema profile team'
 
@@ -87,7 +87,7 @@ html_js_files = [
 ]
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'EOSCproviderProfile'
+htmlhelp_basename = 'EOSCserviceProfile'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -106,7 +106,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'EOSCproviderProfile.tex', u'EOSC Provider profile',
+  ('index', 'EOSCserviceProfile.tex', u'EOSC Service / DataSource profile',
    u'European Open Science Cloud', 'manual'),
 ]
 
@@ -116,8 +116,8 @@ latex_documents = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'EOSCproviderProfile', u'EOSC Provider Profile',
-   u'EOSC', 'EOSCproviderProfile', 'Description on Provider profile for the European Open Science Cloud.',
+  ('index', 'EOSCserviceProfile', u'EOSC Service / DataSource Profile',
+   u'EOSC', 'EOSCserviceProfile', 'Description on Service / DataSource profile for the European Open Science Cloud.',
    'Miscellaneous'),
 ]
 
