@@ -6,6 +6,7 @@
     <xsl:output method="xml"
                 omit-xml-declaration="yes"/>
     <xsl:include href="vocabulary.xsl"/>
+    <xsl:include href="helper.xsl"/>
 
     <xsl:template match="/">
 .. _service:
@@ -34,13 +35,8 @@ Service
 1. Basic
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'id'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'name'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'abbreviation'" /></xsl:call-template>
@@ -54,13 +50,8 @@ Service
 2. Marketing
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'description'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'tagline'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
@@ -73,13 +64,8 @@ Service
 3. Classification
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'categories'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'category'" /></xsl:call-template>
@@ -94,13 +80,8 @@ Service
 4. Availability
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'geographicalAvailabilities'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'languageAvailabilities'" /></xsl:call-template>
     </xsl:template>
@@ -110,13 +91,8 @@ Service
 5. Location
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'resourceGeographicLocations'" /></xsl:call-template>
     </xsl:template>
 	
@@ -125,13 +101,8 @@ Service
 6. Contact
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'serviceMainContact'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'mainContact'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'publicContacts'" /></xsl:call-template>
@@ -146,13 +117,8 @@ Service
 7. Maturity
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'technologyReadinessLevel'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'lifeCycleStatus'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'certifications'" /></xsl:call-template>
@@ -169,13 +135,8 @@ Service
 8. Dependencies
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'requiredResources'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'relatedResources'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'relatedPlatforms'" /></xsl:call-template>
@@ -188,13 +149,8 @@ Service
 9. Attribution
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'fundingBody'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'fundingPrograms'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'grantProjectNames'" /></xsl:call-template>
@@ -206,13 +162,8 @@ Service
 10. Management
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'helpdeskPage'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'userManual'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'termsOfUse'" /></xsl:call-template>
@@ -230,13 +181,8 @@ Service
 11. Order
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'orderType'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'order'" /></xsl:call-template>
                
@@ -247,13 +193,8 @@ Service
 12. Financial
 ########
 
-.. list-table:: EOSC Service Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
                

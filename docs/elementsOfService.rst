@@ -10,14 +10,16 @@ Service
 1. Basic
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Basic" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
+     - Type
+     - Multiplicity
      - Mandatory
-        
    * - id
      - A persistent identifier, a unique reference to the Resource in the context of the EOSC Portal.
      - N
@@ -39,14 +41,16 @@ Service
 2. Marketing
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Marketing" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - description
      - A high-level description in fairly non-technical terms of a) what the Resource does, functionality it provides and Resources it enables to access, b) the benefit to a user/customer delivered by a Resource; benefits are usually related to alleviating pains (e.g., eliminate undesired outcomes, obstacles or risks) or producing gains (e.g. increased performance, social gains, positive emotions or cost saving), c) list of customers, communities, users, etc. using the Resource.
      - Y
@@ -65,14 +69,16 @@ Service
 3. Classification
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Classification" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - scientificDomains
      - The branch of science, scientific discipline that is related to the Resource. Vocabularies: :doc:`Domain <_vocabularies/SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/SCIENTIFIC_SUBDOMAIN>`.
      - Y
@@ -97,14 +103,16 @@ Service
 4. Availability
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Availability" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - geographicalAvailabilities
      - Locations where the Resource is offered.
      - Y
@@ -114,28 +122,32 @@ Service
 5. Location
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Location" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - resourceGeographicLocations
      - List of geographic locations where data, samples, etc. are stored and processed.
      - N
 6. Contact
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Contact" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-        
+     - Type
+     - Multiplicity
+     - Mandatory
    * - 
      - 
      - Y
@@ -154,14 +166,16 @@ Service
 7. Maturity
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Maturity" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - 
      - 
      - Y
@@ -189,14 +203,16 @@ Service
 8. Dependencies
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Dependencies" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - requiredResources
      - List of other Resources required to use this Resource.
      - N
@@ -212,14 +228,16 @@ Service
 9. Attribution
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Attribution" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - fundingBody
      - Name of the funding body that supported the development and/or operation of the Resource. :doc:`Vocabulary <_vocabularies/FUNDING_BODY>`.
      - N
@@ -232,14 +250,16 @@ Service
 10. Management
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Management" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - helpdeskPage
      - The URL to a webpage to ask more information from the Provider about this Resource.
      - N
@@ -270,14 +290,16 @@ Service
 11. Order
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Order" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - orderType
      - Information on the order type (requires an ordering procedure, or no ordering and if fully open or requires authentication).
      - Y
@@ -287,14 +309,16 @@ Service
 12. Financial
 ########
 
+        
 .. list-table:: EOSC Service Profile Elements of "Financial" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
 
    * - Element name
      - Description
-     - Mandatory  
-	    
+     - Type
+     - Multiplicity
+     - Mandatory
    * - paymentModel
      - Webpage with the supported payment models and restrictions that apply to each of them.
      - N
