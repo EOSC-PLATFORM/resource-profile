@@ -6,6 +6,7 @@
     <xsl:output method="xml"
                 omit-xml-declaration="yes"/>
     <xsl:include href="vocabulary.xsl"/>
+    <xsl:include href="helper.xsl"/>
 
     <xsl:template match="/">
 .. _service:
@@ -42,9 +43,8 @@ DataSource
    :widths: 25 50 10
    :header-rows: 1
 
-   * - Element name
-     - Description
-     - Mandatory
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
+
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'id'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'name'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'abbreviation'" /></xsl:call-template>
@@ -58,13 +58,8 @@ DataSource
 2. Marketing
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'description'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'tagline'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
@@ -77,13 +72,8 @@ DataSource
 3. Classification
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'scientificDomains'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'categories'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'category'" /></xsl:call-template>
@@ -98,13 +88,8 @@ DataSource
 4. Availability
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'geographicalAvailabilities'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'languageAvailabilities'" /></xsl:call-template>
     </xsl:template>
@@ -114,13 +99,8 @@ DataSource
 5. Location
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'resourceGeographicLocations'" /></xsl:call-template>
     </xsl:template>
 	
@@ -129,13 +109,8 @@ DataSource
 6. Contact
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'serviceMainContact'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'mainContact'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'publicContacts'" /></xsl:call-template>
@@ -150,13 +125,8 @@ DataSource
 7. Maturity
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'technologyReadinessLevel'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'lifeCycleStatus'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'certifications'" /></xsl:call-template>
@@ -173,13 +143,8 @@ DataSource
 8. Dependencies
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'requiredResources'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'relatedResources'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'relatedPlatforms'" /></xsl:call-template>
@@ -192,13 +157,8 @@ DataSource
 9. Attribution
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'fundingBody'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'fundingPrograms'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'grantProjectNames'" /></xsl:call-template>
@@ -210,13 +170,8 @@ DataSource
 10. Management
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'helpdeskPage'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'userManual'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'termsOfUse'" /></xsl:call-template>
@@ -234,13 +189,8 @@ DataSource
 11. Order
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'orderType'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'order'" /></xsl:call-template>
                
@@ -251,13 +201,8 @@ DataSource
 12. Financial
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'paymentModel'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'pricing'" /></xsl:call-template>
                
@@ -268,13 +213,8 @@ DataSource
 13. Data Source Policies
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'submissionPolicyURL'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'preservationPolicyURL'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'versionControl'" /></xsl:call-template>
@@ -287,13 +227,8 @@ DataSource
 14. Data Source Content
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'jurisdiction'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'datasourceClassification'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchEntityTypes'" /></xsl:call-template>
@@ -306,13 +241,8 @@ DataSource
 15. Research Product Policies
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductLicensings'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductAccessPolicies'" /></xsl:call-template>
 
@@ -323,13 +253,8 @@ DataSource
 16. Research Product Metadata
 ########
 
-.. list-table:: EOSC datasource Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-   * - Element name
-     - Description
-     - Mandatory  
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductMetadataLicensing'" /></xsl:call-template>
 	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'datasource'" /><xsl:with-param name="keyName" select="'researchProductMetadataAccessPolicies'" /></xsl:call-template>
 
@@ -340,11 +265,17 @@ DataSource
         <xsl:param name="entity" />
         <xsl:param name="keyName" />
    * - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@name)" />
-     - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//xs:documentation)" />
-        <xsl:call-template name="checkVocabulary">
-            <xsl:with-param name="nameToCheck" select="$keyName" />
-        </xsl:call-template>
-        <xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) > 0) and (//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0)">
+     - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//xs:documentation)" /><xsl:if test="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type)">
+     - <xsl:call-template name="search-and-replace"> <xsl:with-param name="input" select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type)" /> <xsl:with-param
+            name="search-string" select="'xs:'"/><xsl:with-param name="replace-string" select="''"/></xsl:call-template><xsl:call-template name="checkVocabulary">
+        <xsl:with-param name="nameToCheck" select="$keyName" />
+    </xsl:call-template></xsl:if><xsl:if test="not(normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type))">
+     - <xsl:call-template name="checkVocabulary">
+        <xsl:with-param name="nameToCheck" select="$keyName" />
+    </xsl:call-template></xsl:if><xsl:if test="(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0) and (count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs) = 0)"><!-- check if one and optional -->
+     - 1</xsl:if><xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) = 0) and (count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs) = 0)"><!-- check if one and mandatory -->
+     - 1</xsl:if><xsl:if test="(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0) and (//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs = 'unbounded')"><!-- check if one and mandatory -->
+     - Multiple</xsl:if><xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) > 0) and (//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0)">
      - N</xsl:if><xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) = 0)">
      - Y</xsl:if>
 
