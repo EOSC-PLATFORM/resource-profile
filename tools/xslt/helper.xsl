@@ -13,7 +13,9 @@
      - Description
      - Type
      - Multiplicity
-     - Mandatory</xsl:template>
+     - Mandatory
+
+</xsl:template>
 
 <xsl:template name="search-and-replace">
     <xsl:param name="input"/>
