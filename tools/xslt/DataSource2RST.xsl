@@ -111,7 +111,7 @@ DataSource
 
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'serviceMainContact'" /></xsl:call-template>
+        <!--xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'serviceMainContact'" /></xsl:call-template-->
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'mainContact'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'publicContacts'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'helpdeskEmail'" /></xsl:call-template>
@@ -127,7 +127,7 @@ DataSource
 
         <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
 
-	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'technologyReadinessLevel'" /></xsl:call-template>
+	    <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'trl'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'lifeCycleStatus'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'certifications'" /></xsl:call-template>
 		<xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'service'" /><xsl:with-param name="keyName" select="'standards'" /></xsl:call-template>
