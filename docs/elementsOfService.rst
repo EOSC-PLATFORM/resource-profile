@@ -202,11 +202,6 @@ Service
      - Mandatory
 
 
-   * - 
-     - 
-     - 
-     - 1
-     - Y
    * - mainContact
      - Service's Main Contact/Resource Owner info.
      - tns:serviceMainContact
