@@ -242,9 +242,9 @@ Service
      - Mandatory
 
 
-   * - 
-     - 
-     - 
+   * - trl
+     - The Technology Readiness Level of the Resource (to be further updated in the context of the EOSC).
+     - string :doc:`Vocabulary <_vocabularies/TRL>`.
      - 1
      - Y
    * - lifeCycleStatus
@@ -312,11 +312,11 @@ Service
      - string
      - 1
      - N
-   * - 
-     - 
-     - 
+   * - catalogueId
+     - The Catalogue this Resource is originally registered at.
+     - string
      - 1
-     - Y
+     - N
 9. Attribution
 ########
 
