@@ -202,11 +202,6 @@ Service
      - Mandatory
 
 
-   * - 
-     - 
-     - 
-     - 1
-     - Y
    * - mainContact
      - Service's Main Contact/Resource Owner info.
      - tns:serviceMainContact
@@ -312,11 +307,11 @@ Service
      - string
      - 1
      - N
-   * - 
-     - 
-     - 
+   * - catalogueId
+     - The Catalogue this Resource is originally registered at.
+     - string
      - 1
-     - Y
+     - N
 9. Attribution
 ########
 
